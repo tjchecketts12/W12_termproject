@@ -1,0 +1,210 @@
+@media only screen and (min-width: 37.5em) {
+    body {
+        margin-right: 1%;
+        max-width: 90%;
+    }
+    .container {
+        grid-template-columns: repeat(8, 1fr);
+        grid-gap: 3px;
+        margin: .5rem;
+    }
+   
+    /*------------ Grid Layout ---------------*/
+    header {
+        grid-column-start: 1;
+        grid-column-end: 9;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        border-bottom: 4px solid rgb(102, 94, 79);
+    }
+    nav {
+        grid-column-start: 1;
+        grid-row-start: 2;
+        padding: 1%;
+        background-color: rgb(102, 94, 79);
+        box-shadow: 0px 3px 3px gray;
+        margin-top: 15%;
+    }
+    .form-container {
+        grid-column-start: 2;
+        grid-column-end: 10;
+    }
+    .templeimages {
+        margin-left: 5%;
+        grid-column-start: 2;
+        grid-column-end: 10;
+    }
+    .hero {
+        grid-column-start: 3;
+        grid-column-end: 9;
+        grid-row-start: 2;
+        grid-row-end: 5;
+        margin: 0;
+    }
+    form {
+        grid-column-start: 3;
+        grid-column-end: 9;
+        display: flex;
+        flex-flow: column;
+        padding-left: 5%;
+        margin-top: -5%;
+    }
+    .services-container {
+        grid-column-start: 3;
+        grid-column-end: 9;
+        border: 1px solid rgb(102, 94, 79);
+        border-radius: 5px;
+        padding: .25rem;
+        margin: 1rem;
+        margin-top: 2rem;
+    }
+    .amenities-container {
+        grid-column-start: 3;
+        grid-column-end: 9;
+        border: 1px solid rgb(102, 94, 79);
+        border-radius: 5px;
+        padding: .25rem;
+        margin: 1rem;
+        margin-top: 2rem;
+    }
+    .thankyou {
+        grid-column-start: 3;
+        grid-column-end: 9;
+        margin-bottom: 5%;
+    }
+    .slideshow-container {
+        grid-column-start: 3;
+        grid-column-end: 9;
+        padding: .25rem;
+        margin-left: .25rem;
+        margin-top: 0;
+    }
+    .slideshow-info {
+        grid-column-start: 3;
+        grid-column-end: 9;
+    }
+    footer {
+        grid-column-start: 1;
+        grid-column-end: 9;
+        margin-left: 1%;
+        margin-top: .5rem;
+        text-align: center;
+    }
+
+    .contact {
+        grid-column-start: 1;
+        grid-column-end:9;
+    }
+    /*------------ Header ----------------*/
+    header h1 {
+        font-size: 3.5rem;
+        grid-column-start: 2;
+        grid-column-end: 9;
+    }
+    .logo {
+        max-width: 100%;
+      
+    }
+    /*--------------- Navigation -------------- */
+    .site-navigation {
+        width: 90%;
+        list-style-type: none;
+    }
+    .site-navigation li a {
+        padding: .3rem;
+        margin-left: .0;
+        text-decoration: none;
+        color: white;
+        border: none;
+    }
+    .site-navigation li:first-child {
+        display: none;
+    }
+    .site-navigation li {
+        margin-left: .5em;
+        padding: .5em;
+        display: grid;
+    }
+    /*------------- Slide Show ------------------*/
+    .text {
+        width: 94%;
+        font-size: 1.3rem;
+    }
+    .slideshow-container img {
+        max-width: 100%;
+    }
+    .numbertext {
+        margin-top: 1.8%;
+        margin-left: 1.2%;
+        font-size: 1rem;
+    }
+    /*--------------- Hero ------------------*/
+    .hero {
+        margin-left: 4%;
+    }
+    .hero h2 {
+        grid-column-start: 1;
+        font-size: 1.4rem;
+    }
+    .hero p {
+        grid-column-start: 1;
+        grid-column-end: 8;
+    }
+    .button {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        margin-top: 10%;
+    }
+    /*--------------- Footer ------------------*/
+    footer a {
+        font-size: 1.2rem;
+    }
+    footer span {
+        font-size: 1.2rem;
+    }
+    /*--------------- Form ------------------*/
+    form h2 {
+        padding: 1rem;
+    }
+    /*------------ Services ----------------*/
+    .services, .service-description {
+        text-align: left;
+    }
+    .service-description:last-child {
+        border-bottom: none;
+    }
+    /*------------ Amenities ----------------*/
+    .amenities-description:last-child {
+        border-bottom: none;
+    }
+    /*------------ Temple Images ---------*/
+    .templeimages>img {
+        margin-top: 10%;
+       
+    }
+    .templeimages img:first-child {
+        margin-top: 5%;
+    }
+    /*------------ Temple Menus ----------------*/
+
+.accordion {
+    max-width: 95%;
+}
+    /*------------ Contact Us ----------------*/
+    .contact {
+        margin: 2rem 0;
+        border: 1px double rgb(102, 94, 79);
+        border-radius: 10px;
+        padding: .5rem 2%;
+        font-family: 'Quicksand', 'sans-serif';
+        max-width:100%;
+        display: grid;
+        grid-auto-flow: column;
+    }
+    .contact p {
+        margin-top: 15%;
+    }
+
+}

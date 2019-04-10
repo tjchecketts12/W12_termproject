@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    <title>Temple Inn & Suites | Temples</title>
+    <meta name="description" content="Pictures and information on LDS temples">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Caudex:400,400i,700,700i%7CQuicksand:400,500,700%7CTangerine:400,700"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class=container>
+        <header>
+            <img class="logo" src="images/TempleInnLogo.png" alt="Temple Inn Logo">
+            <h1><a href="index.html">Temple Inn &amp; Suites</a></h1>
+        </header>
+        <nav>
+            <ul class="site-navigation">
+                <li><button onclick="toggleMenu()">&#9776; Menu</button></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li class="activepage"><a href="temples.html">Temples</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="templeimages">
+            <!--BOSTON-->
+            <picture>
+                    <source media="(min-width: 64em)" srcset="images/boston/boston-temple-night-950.jpg">
+                    <source media="(min-width: 37.5em)" srcset="images/boston/boston-temple-night-600.jpg">
+                    <img src="images/boston/boston-temple-night-350.jpg" alt="Boston Temple at Night">
+                </picture>
+            <ul class="accordion">
+                <li>
+                    <a class="toggle" href="javascript:void(0);">Boston Temple</a>
+                    <ul class="inner">
+                        <li>
+                            <a href="#" class="toggle">Contact Info</a>
+                            <div class="inner">
+                                <p><strong>Address: </strong><br>
+                                    100 Hinckley Wy<br>
+                                    Belmont, MA 02478
+                                </p>
+                                <p><strong>Phone: </strong></p>
+                                <p>617-993-9993</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#" class="toggle">Services</a>
+                            <div class="inner">
+                                <p>&#9656; Clothing Rental Available</p>
+                                <p>&#9656; NO Cafeteria Available</p>
+                                <p>&#9656; NO Patron Housing Available</p>
+                                <p>&#9656; Distribution Center Nearby</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#" class="toggle">Ordinance Schedule</a>
+                            <ul class="inner">
+                                <li>
+                                    <a href="#" class="toggle">Baptisms</a>
+                                    <div class="inner">
+                                        <p><strong>8:00am - 10:00am</strong><br> Appointment Preferred</p>
+                                        <p><strong>10:00am - 12:00pm</strong><br> Family Priority Time - No Appointment
+                                            Needed</p>
+                                        <p><strong>12:00pm - 4:00pm </strong><br>Appointment Preferred</p>
+                                        <p><strong>4:00pm - 6:00pm</strong><br> Family Priority Time - No Appointment
+                                            Needed</p>
+                                        <p><strong>6:00pm - 9:30pm</strong><br> Church Groups - Appointment Required</p>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="toggle">Initiatory</a>
+                                    <div class="inner">
+                                        <p>Please call the temple for Initiatory times</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="toggle">Endowment</a>
+                                    <div class="inner">
+                                        <p>8:00am</p>
+                                        <p>9:00am</p>
+                                        <p>10:00am</p>
+                                        <p>11:00am</p>
+                                        <p>12:00pm</p>
+                                        <p>1:00pm</p>
+                                        <p>2:00pm</p>
+                                        <p>3:00pm</p>
+                                        <p>4:30pm</p>
+                                        <p>5:30pm</p>
+                                        <p>6:30pm</p>
+                                        <p>7:30pm</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="toggle">Sealings</a>
+                                    <div class="inner">
+                                        <p>Please call the temple for Sealing times</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#" class="toggle">History</a>
+                            <div class="inner">
+                                <p><strong>Announcement:</strong> September 30th, 1995</p>
+                                <p><strong>Groundbreaking & Site Dedication:</strong> June 13, 1997 by Richard G. Scott</p>
+                                <p><strong>Public Open House:</strong> August 29-September 23rd, 2000</p>
+                                <p><strong>Dedication: </strong>October 1, 2000 by Gordon B. Hinckley</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#" class="toggle">Temple Closure Dates</a>
+                            <div class="inner">
+                                <p id="bostonClosed"></p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#" class="toggle">Current Temperature</a>
+                            <div class="inner">
+
+                                <p class="label"><strong>Currently: </strong></p>
+
+                                <p class="value"><span id="bostonCurrently"></span></p>
+
+                                <p class="label"> <strong>Temperature: </strong></p>
+
+                                <p class="value"><span id="bostonCurrentTemp"></span>&deg;F</p>
+
+                                <p class="label"><strong>Wind Speed: </strong></p>
+
+                                <p class="value"><span id="bostonMph"></span> mph</p>
+
+                                <p class="label"> <strong>Wind Chill: </strong></p>
+
+                                <p class="value"><span id="bostonWindchill"></span>&deg;F</p>
+
+                                <p class="label"> <strong>Humidity: </strong></p>
+
+                                <p class="value"><span id="bostonHumidity"></span>&#37;</p>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!--HARTFORD-->
+            <picture>
+                    <source media="(min-width: 64em)" srcset="images/hartford/Hartford-temple-exterior-950.jpg">
+                    <source media="(min-width: 37.5em)" srcset="images/hartford/Hartford-temple-exterior-600.jpg">
+                    <img src="images/hartford/Hartford-temple-exterior-350.jpg" alt="Hartford CT temple exterior">
+                </picture>
+            <ul class="accordion">
+                <li>
+                    <a class="toggle" href="javascript:void(0);">Hartford Temple</a>
+                    <ul class="inner">
+                        <li>
+                            <a href="#" class="toggle">Contact Info</a>
+                            <div class="inner">
+                                <p><strong>Address: </strong><br>
+                                    2 Central Way<br>
+                                    Farmington, CT 06032
+                                </p>
+                                <p><strong>Phone: </strong></p>
+                                <p>860-773-7200</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#" class="toggle">Services</a>
+                            <div class="inner">
+                                <p>&#9656; NO Clothing Rental Available</p>
+                                <p>&#9656; NO Cafeteria Available</p>
+                                <p>&#9656; NO Patron Housing Available</p>
+                                <p>&#9656; Distribution Center Nearby</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#" class="toggle">Ordinance Schedule</a>
+                            <ul class="inner">
+                                <li>
+                                    <a href="#" class="toggle">Baptisms</a>
+                                    <div class="inner">
+                                        <p><strong>9:00am - 11:30am</strong><br> Appointment Required</p>
+                                        <p><strong>6:00pm - 8:00pm</strong><br> Appointment Required</p>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="toggle">Initiatory</a>
+                                    <div class="inner">
+                                        <p>Please call the temple for Initiatory times</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="toggle">Endowment</a>
+                                    <div class="inner">
+                                        <p>9:30am</p>
+                                        <p>11:00am</p>
+                                        <p>6:00pm</p>
+                                        <p>7:30pm</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="toggle">Sealings</a>
+                                    <div class="inner">
+                                        <p>Please call the temple for Sealing times</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#" class="toggle">History</a>
+                            <div class="inner">
+                                <p><strong>Announcement:</strong> October 2, 2010</p>
+                                <p><strong>Groundbreaking & Site Dedication:</strong> August 17, 2013 by Thomas S.
+                                    Monson</p>
+                                <p><strong>Public Open House:</strong> September 30 - October 22, 2016</p>
+                                <p><strong>Dedication: </strong>November 20, 2016 by Henry B. Eyring</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#" class="toggle">Temple Closure Dates</a>
+                            <div class="inner">
+                                <p id="hartfordClosed"></p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#" class="toggle">Current Temperature</a>
+                            <div class="inner">
+
+                                <p class="label"><strong>Currently: </strong></p>
+
+                                <p class="value"><span id="hartfordCurrently"></span></p>
+
+                                <p class="label"><strong>Temperature: </strong></p>
+
+                                <p class="value"><span id="hartfordCurrentTemp"></span>&deg;F</p>
+
+                                <p class="label"><strong>Wind Speed: </strong></p>
+
+                                <p class="value"><span id="hartfordMph"></span> mph</p>
+
+                                <p class="label"><strong>Wind Chill: </strong></p>
+
+                                <p class="value"><span id="hartfordWindchill"></span>&deg;F</p>
+
+                                <p class="label"><strong>Humidity: </strong></p>
+                                <p class="value"><span id="hartfordHumidity"></span>&#37;</p>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!--MANHATTAN-->
+            <picture>
+                    <source media="(min-width: 64em)" srcset="images/manhattan/manhattan-temple-lds-exterior-950.jpg">
+                    <source media="(min-width: 37.5em)" srcset="images/manhattan/manhattan-temple-lds-exterior-600.jpg">
+                    <img src="images/manhattan/manhattan-temple-lds-exterior-350.jpg" alt="Manhattan Temple Exterior">
+                </picture>
+            <ul class="accordion">
+                <li>
+                    <a class="toggle" href="javascript:void(0);">Manhattan Temple</a>
+                    <ul class="inner">
+                        <li>
+                            <a href="#" class="toggle">Contact Info</a>
+                            <div class="inner">
+                                <p><strong>Address: </strong><br>
+                                    125 Columbia Ave<br>
+                                    New York, NY 10023
+                                </p>
+                                <p><strong>Phone: </strong></p>
+                                <p>917-441-8220</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#" class="toggle">Services</a>
+                            <div class="inner">
+                                <p>&#9656; Clothing Rental Available</p>
+                                <p>&#9656; NO Cafeteria Available</p>
+                                <p>&#9656; NO Patron Housing Available</p>
+                                <p>&#9656; Distribution Center Nearby</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#" class="toggle">Ordinance Schedule</a>
+                            <ul class="inner">
+                                <li>
+                                    <a href="#" class="toggle">Baptisms</a>
+                                    <div class="inner">
+                                        <p><strong>11:00am - 12:00pm</strong><br> Appointment Required</p>
+                                        <p><strong>2:30pm - 3:30pm</strong><br> Appointment Required</p>
+                                        <p><strong>4:00pm - 4:30pm</strong><br> Appointment Required</p>
+                                        <p><strong>6:30pm - 7:30pm</strong><br> Appointment Required</p>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="toggle">Initiatory</a>
+                                    <div class="inner">
+                                        <p>Please call the temple for Initiatory times</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="toggle">Endowment</a>
+                                    <div class="inner">
+                                        <p>11:00am</p>
+                                        <p>12:30pm</p>
+                                        <p>2:00pm</p>
+                                        <p>6:15pm</p>
+                                        <p>7:45pm</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="toggle">Sealings</a>
+                                    <div class="inner">
+                                        <p>Please call the temple for Sealing times</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#" class="toggle">History</a>
+                            <div class="inner">
+                                <p><strong>Announcement:</strong> August 7, 2002</p>
+                                <p><strong>Groundbreaking & Site Dedication:</strong> September 23, 2002</p>
+                                <p><strong>Public Open House:</strong> May 8 - June 5, 2004</p>
+                                <p><strong>Dedication: </strong>June 13, 2004 by Gordon B. Hinckley</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#" class="toggle">Temple Closure Dates</a>
+                            <div class="inner">
+                                <p id="manhattanClosed"></p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#" class="toggle">Current Temperature</a>
+                            <div class="inner">
+
+                                <p class="label"><strong>Currently: </strong> </p>
+
+                                <p class="value"><span id="manhattanCurrently"></span></p>
+
+                                <p class="label"><strong>Temperature: </strong></p>
+
+                                <p class="value"><span id="manhattanCurrentTemp"></span>&deg;F</p>
+
+                                <p class="label"><strong>Wind Speed: </strong></p>
+
+                                <p class="value"><span id="manhattanMph"></span> mph</p>
+
+                                <p class="label"><strong>Wind Chill: </strong> </p>
+
+                                <p class="value"><span id="manhattanWindchill"></span>&deg;F</p>
+
+                                <p class="label"><strong>Humidity: </strong></p>
+                                <p class="value"><span id="manhattanHumidity"></span>&#37;</p>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!--PHILADELPHIA-->
+            <picture>
+                    <source media="(min-width: 64em)" srcset="images/philadelphia/philadelphia-temple-exterior-950.jpg">
+                    <source media="(min-width: 37.5em)" srcset="images/philadelphia/philadelphia-temple-exterior-600.jpg">
+                    <img src="images/philadelphia/philadelphia-temple-exterior-350.jpg" alt="Philadelphia Temple Exterior">
+                </picture>
+            <ul class="accordion">
+                <li>
+                    <a class="toggle" href="javascript:void(0);">Philadelphia Temple</a>
+                    <ul class="inner">
+                        <li>
+                            <a href="#" class="toggle">Contact Info</a>
+                            <div class="inner">
+                                <p><strong>Address: </strong><br>
+                                    1739 Vine St<br>
+                                    Philadelphia, PA 19103
+                                </p>
+                                <p><strong>Phone: </strong></p>
+                                <p>215-398-3040</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#" class="toggle">Services</a>
+                            <div class="inner">
+                                <p>&#9656; Clothing Rental Available</p>
+                                <p>&#9656; NO Cafeteria Available</p>
+                                <p>&#9656; NO Patron Housing Available</p>
+                                <p>&#9656; NO Distribution Center Nearby</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#" class="toggle">Ordinance Schedule</a>
+                            <ul class="inner">
+                                <li>
+                                    <a href="#" class="toggle">Baptisms</a>
+                                    <div class="inner">
+                                        <p><strong>9:30am - 1:30pm</strong><br> Appointment Required</p>
+                                        <p><strong>6:00pm - 9:30pm</strong><br> Appointment Required</p>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="toggle">Initiatory</a>
+                                    <div class="inner">
+                                        <p>Please call the temple for Initiatory times</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="toggle">Endowment</a>
+                                    <div class="inner">
+                                        <p>10:00am</p>
+                                        <p>11:30am</p>
+                                        <p>6:30pm</p>
+                                        <p>8:00pm</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="toggle">Sealings</a>
+                                    <div class="inner">
+                                        <p>Please call the temple for Sealing times</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#" class="toggle">History</a>
+                            <div class="inner">
+                                <p><strong>Announcement:</strong> October 4, 2008</p>
+                                <p><strong>Groundbreaking & Site Dedication:</strong> September 17, 2011 by Henry B.
+                                    Eyring</p>
+                                <p><strong>Public Open House:</strong> August 10 - September 9, 2016</p>
+                                <p><strong>Dedication: </strong>September 18, 2016 by Henry B. Eyring</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#" class="toggle">Temple Closure Dates</a>
+                            <div class="inner">
+                                <p id="philadelphiaClosed"></p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#" class="toggle">Current Temperature</a>
+                            <div class="inner">
+
+                                <p class="label"><strong>Currently: </strong></p>
+
+                                <p class="value"><span id="philadelphiaCurrently"></span></p>
+
+                                <p class="label"><strong>Temperature: </strong></p>
+
+                                <p class="value"><span id="philadelphiaCurrentTemp"></span>&deg;F</p>
+
+                                <p class="label"><strong>Wind Speed: </strong></p>
+
+                                <p class="value"><span id="philadelphiaMph"></span> mph</p>
+
+                                <p class="label"><strong>Wind Chill: </strong></p>
+
+                                <p class="value"><span id="philadelphiaWindchill"></span>&deg;F</p>
+
+                                <p class="label"><strong>Humidity: </strong></p>
+                                <p class="value"><span id="philadelphiaHumidity"></span>&#37;</p>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!--RALEIGH-->
+            <picture>
+                    <source media="(min-width: 64em)" srcset="images/raleigh/raleigh-temple-950.jpg">
+                    <source media="(min-width: 37.5em)" srcset="images/raleigh/raleigh-temple-600.jpg">
+                    <img src="images/raleigh/raleigh-temple-350.jpg" alt="Raleigh Temple">
+                </picture>
+            <ul class="accordion">
+                <li>
+                    <a class="toggle" href="javascript:void(0);">Raleigh Temple</a>
+                    <ul class="inner">
+                        <li>
+                            <a href="#" class="toggle">Contact Info</a>
+                            <div class="inner">
+                                <p><strong>Address: </strong><br>
+                                    574 Bryan Drive<br>
+                                    Apex, NC 27502
+                                </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#" class="toggle">Services</a>
+                            <div class="inner">
+                                <p>&#9656; NO Clothing Rental Available</p>
+                                <p>&#9656; NO Cafeteria Available</p>
+                                <p>&#9656; NO Patron Housing Available</p>
+                                <p>&#9656; NO Distribution Center Nearby</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#" class="toggle">Ordinance Schedule</a>
+                            <ul class="inner">
+                                <li>
+                                    <a href="#" class="toggle">Baptisms</a>
+                                    <div class="inner">
+                                        <p>CLOSED FOR RENOVATIONS</p>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="toggle">Initiatory</a>
+                                    <div class="inner">
+                                        <p>CLOSED FOR RENOVATIONS</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="toggle">Endowment</a>
+                                    <div class="inner">
+                                        <p>CLOSED FOR RENOVATIONS</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="toggle">Sealings</a>
+                                    <div class="inner">
+                                        <p>CLOSED FOR RENOVATIONS</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#" class="toggle">History</a>
+                            <div class="inner">
+                                <p><strong>Announcement:</strong> September 3, 1998</p>
+                                <p><strong>Groundbreaking & Site Dedication:</strong>February 6, 1999 by Loren C. Dunn
+                                </p>
+                                <p><strong>Public Open House:</strong> December 3 - 11, 1999</p>
+                                <p><strong>Dedication: </strong>December 18 - 19 by Gordon B. Hinckley</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#" class="toggle">Temple Closure Dates</a>
+                            <div class="inner">
+                                <p id="raleighClosed"></p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#" class="toggle">Current Temperature</a>
+                            <div class="inner">
+
+                                <p class="label"><strong>Currently: </strong></p>
+
+                                <p class="value"><span id="raleighCurrently"></span></p>
+
+                                <p class="label"><strong>Temperature: </strong> </p>
+
+                                <p class="value"><span id="raleighCurrentTemp"></span>&deg;F</p>
+
+                                <p class="label"><strong>Wind Speed: </strong></p>
+
+                                <p class="value"><span id="raleighMph"></span> mph</p>
+
+                                <p class="label"><strong>Wind Chill: </strong> </p>
+
+                                <p class="value"><span id="raleighWindchill"></span>&deg;F</p>
+
+                                <p class="label"><strong>Humidity: </strong> </p>
+
+                                <p class="value"><span id="raleighHumidity"></span>&#37;</p>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!--COLUMBIA-->
+            <picture>
+                    <source media="(min-width: 64em)" srcset="images/columbia/columbia-temple-exterior-950.jpg">
+                    <source media="(min-width: 37.5em)" srcset="images/columbia/columbia-temple-exterior-600.jpg">
+                    <img src="images/columbia/columbia-temple-exterior-350.jpg" alt="Columbia Temple Exterior">
+                </picture>
+
+            <ul class="accordion">
+                <li>
+                    <a class="toggle" href="javascript:void(0);">Columbia Temple</a>
+                    <ul class="inner">
+                        <li>
+                            <a href="#" class="toggle">Contact Info</a>
+                            <div class="inner">
+                                <p><strong>Address: </strong><br>
+                                    2905 Trotter RD<br>
+                                    Hopkins, SC 29061
+                                </p>
+                                <p><strong>Phone: </strong></p>
+                                <p>803-647-9472</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#" class="toggle">Services</a>
+                            <div class="inner">
+                                <p>&#9656; NO Clothing Rental Available</p>
+                                <p>&#9656; NO Cafeteria Available</p>
+                                <p>&#9656; NO Patron Housing Available</p>
+                                <p>&#9656; Distribution Center Nearby</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#" class="toggle">Ordinance Schedule</a>
+                            <ul class="inner">
+                                <li>
+                                    <a href="#" class="toggle">Baptisms</a>
+                                    <div class="inner">
+                                        <p><strong>9:00am - 10:30am</strong><br> Appointment Preferred</p>
+                                        <p><strong>11:00am - 12:30pm</strong><br> Appointment Preferred</p>
+                                        <p><strong>5:00pm - 8:00pm</strong><br> Appointment Preferred</p>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="toggle">Initiatory</a>
+                                    <div class="inner">
+                                        <p>Please call the temple for Initiatory times</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="toggle">Endowment</a>
+                                    <div class="inner">
+                                        <p>9:00am</p>
+                                        <p>11:00am</p>
+                                        <p>5:00pm</p>
+                                        <p>7:00pm</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="toggle">Sealings</a>
+                                    <div class="inner">
+                                        <p>Please call the temple for Sealing times</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#" class="toggle">History</a>
+                            <div class="inner">
+                                <p><strong>Announcement:</strong> September 11, 1998</p>
+                                <p><strong>Groundbreaking & Site Dedication:</strong> December 5, 1998 by Gordon T.
+                                    Watts</p>
+                                <p><strong>Public Open House:</strong> September 30 - October 9, 1999</p>
+                                <p><strong>Dedication: </strong>October 16 - 17 by Gordon B. Hinckley</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#" class="toggle">Temple Closure Dates</a>
+                            <div class="inner">
+                                <p id="columbiaClosed"></p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#" class="toggle">Current Temperature</a>
+                            <div class="inner">
+
+                                <p class="label"><strong>Currently: </strong></p>
+
+                                <p class="value"><span id="columbiaCurrently"></span></p>
+
+                                <p class="label"><strong>Temperature: </strong> </p>
+
+                                <p class="value"><span id="columbiaCurrentTemp"></span>&deg;F</p>
+
+                                <p class="label"><strong>Wind Speed: </strong></p>
+
+                                <p class="value"><span id="columbiaMph"></span> mph</p>
+
+                                <p class="label"><strong>Wind Chill: </strong></p>
+
+                                <p class="value"><span id="columbiaWindchill"></span>&deg;F</p>
+
+                                <p class="label"><strong>Humidity: </strong></p>
+                                <p class="value"><span id="columbiaHumidity"></span>&#37;</p>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <footer>
+            <a href="https://www.lds.org/temples?lang=eng">Attributes</a> | <a href="contact.html">Contact Us</a> |
+            <span id="currentDate"></span>
+        </footer>
+    </div>
+    <!--flow-container-->
+</body>
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/currentDate.js"></script>
+<script src="scripts/accordian.js"></script>
+<script src="scripts/templeInfo.js"></script>
+<script src="scripts/bostonWeather.js"></script>
+<script src="scripts/hartfordWeather.js"></script>
+<script src="scripts/manhattanWeather.js"></script>
+<script src="scripts/philadelphiaWeather.js"></script>
+<script src="scripts/raleighWeather.js"></script>
+<script src="scripts/columbiaWeather.js"></script>
+
+</html>

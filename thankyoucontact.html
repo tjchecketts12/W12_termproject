@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    <title>Temple Inn & Suites | Thank You!</title>
+    <meta name="description" content="Thank you page for contact request form">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Caudex:400,400i,700,700i|Quicksand:400,500,700|Tangerine:400,700"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img class="logo" src="images/TempleInnLogo.png" alt="Temple Inn Logo">
+            <h1><a href="index.html">Temple Inn &amp; Suites</a></h1>
+        </header>
+        <nav>
+            <ul class="site-navigation">
+                <li><button onclick="toggleMenu()">&#9776; Menu</button></li>
+                <li class="activepage"><a href="index.html">Home</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="temples.html">Temples</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="thankyou">
+            <h2>Thank you!</h2>
+            <p id="thanks">Your Contact Form has been sent!</p>
+        </div>
+
+        <footer>
+            <a href="https://www.lds.org/temples?lang=eng">Attributes</a> | <a href="contact.html">Contact Us</a> |
+            <span id="currentDate"></span>
+        </footer>
+    </div>
+</body>
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/currentDate.js"></script>
+
+</html>

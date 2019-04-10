@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    <title>Temple Inn & Suites | Reservations</title>
+    <meta name="description" content="Make reservations at Temple Inn and Suites">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Caudex:400,400i,700,700i%7CQuicksand:400,500,700%7CTangerine:400,700"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img class="logo" src="images/TempleInnLogo.png" alt="Temple Inn Logo">
+            <h1><a href="index.html">Temple Inn &amp; Suites</a></h1>
+        </header>
+        <nav>
+            <ul class="site-navigation">
+                <li><button onclick="toggleMenu()">&#9776; Menu</button></li>
+                <li><a href="index.html">Home</a></li>
+                <li class="activepage"><a href="reservations.html">Reservations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="temples.html">Temples</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class=form-container>
+            <form method="get" action="thankyou.html">
+                <h2>&mdash;Make A Reservation&mdash;</h2>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label class="top">Full Name*<input type="text" name="name" pattern="[A-Za-z]{5,}" required
+                            autofocus></label>
+                    <label class="top">Phone*<span id="hint">555-555-5555</span><input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            maxlength="12" placeholder="555-555-5555" required></label>
+                    <label class="top">Street*<input type="text" name="street" required></label>
+                    <label class="top">City*<input type="text" name="city" required></label>
+                    <label class="top">State*<input type="text" name="state" required></label>
+                    <label class="top">Zip Code*<input type="text" name="zip" required></label>
+                    <label class="top">Email*<input type="email" name="email" required placeholder="someone@email.com"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Room Information</legend>
+                    <label class="top">Date of Reservation<input type="date" name="resdate"></label>
+                    <label class="top">Desired Bed Type<input list="roomtype" name="roomtype">
+                        <datalist id="roomtype">
+                            <option selected disabled>Select Type of Bed</option>
+                            <option value="Studio"></option>
+                            <option value="1 Twin"></option>
+                            <option value="2 Twins"></option>
+                            <option value="2 doubles"></option>
+                            <option value="1 queen"></option>
+                            <option value="1 king"></option>
+                        </datalist></label>
+                    <label class="top">Desired Room Type
+                        <select name="rooms">
+                            <option selected disabled>Select Number of Rooms</option>
+                            <option value="single">One</option>
+                            <option value="double">Two</option>
+                            <option value="triple">Three</option>
+                        </select></label>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <label for="requests" class="top">Special Requests</label>
+                    <textarea id="requests" name="specialrequests"></textarea>
+                </fieldset>
+                <input class="submitBtn" type="submit" value="Request Reservation">
+
+            </form>
+        </div>
+        <footer>
+            <a href="https://www.lds.org/temples?lang=eng">Attributes</a> | <a href="contact.html">Contact Us</a> |
+            <span id="currentDate"></span>
+        </footer>
+    </div>
+    <!--container-->
+</body>
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/currentDate.js"></script>
+
+</html>
