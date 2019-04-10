@@ -64,7 +64,7 @@ header h1 a {
     margin: .2rem 2%;
     background-color: transparent;
     border: none;
-    font-family: 'Caudex', serif;
+    font-family: 'Tienne', serif;
     font-size: 1.2rem;
     color: white;
 }
@@ -277,7 +277,7 @@ header h1 a {
 /*--------------- Aside ------------------*/
 
 aside {
-    font-family: 'Quicksand', 'sans-serif';
+    font-family: 'Roboto Condensed', sans-serif;
     max-width: 98%;
     margin: .5rem;
     padding: .5rem;
@@ -287,14 +287,14 @@ aside {
 
 .hero {
     text-align: left;
-    font-family: 'Quicksand', 'sans-serif';
+    font-family: 'Roboto Condensed', sans-serif;
     margin: .5rem;
     display: flex;
     flex-flow: column;
 }
 
 .hero h2 {
-    font-family: 'Caudex', 'serif';
+    font-family: 'Tienne', serif;
     font-weight: bold;
     font-size: 1rem;
     color: rgb(102, 94, 79);
@@ -346,7 +346,7 @@ form {
     display: flex;
     flex-flow: column;
     flex-wrap: wrap;
-    font-family: 'Caudex', 'serif';
+    font-family: 'Tienne', serif;
     margin-left: 5%;
     margin-right: 5%;
     
@@ -438,7 +438,7 @@ p {
 /*------------ Services ----------------*/
 
 .services-container h2 {
-    font-family: "Caudex", 'serif';
+    font-family: 'Tienne', serif;
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
@@ -457,7 +457,7 @@ p {
 /*------------ Amenities ----------------*/
 
 .amenities-container h2 {
-    font-family: "Caudex", 'serif';
+    font-family: 'Tienne', serif;
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
@@ -525,7 +525,7 @@ a.toggle {
     border: 1px double rgb(102, 94, 79);
     border-radius: 10px;
     padding: .5rem 2%;
-    font-family: 'Quicksand', 'sans-serif';
+    font-family: 'Roboto Condensed', sans-serif;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-flow: column;
