@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    <title>Temple Inn & Suites | Home Page</title>
+    <meta name="description" content="Home Landing page for Temple Inn and Suites">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Caudex:400,400i,700,700i%7CQuicksand:400,500,700%7CTangerine:400,700"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img class="logo" src="images/TempleInnLogo.png" alt="Temple Inn Logo">
+            <h1><a href="index.html">Temple Inn &amp; Suites</a></h1>
+
+        </header>
+        <nav>
+            <ul class="site-navigation">
+                <li><button onclick="toggleMenu()">&#9776; Menu</button></li>
+                <li class="activepage"><a href="index.html">Home</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="temples.html">Temples</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h2>&#10018;&#10018; Welcome to Temple Inn &amp; Suites &#10018;&#10018;</h2>
+            <p> Located 15 minutes away from the Washington DC temple, Temple Inn &amp; Suites offers
+                amenities for those wanting a place to stay, needing a place to change, or looking for
+                a long term home while serving at the temple.</p>
+
+            <form action="reservations.html">
+                <input class="button" type="submit" value="Make a Reservation Today!" />
+            </form>
+        </div>
+
+        <div class="slideshow-container">
+            <div class="slideshow fade">
+                <div class="numbertext">1 / 2</div>
+                <picture>
+                    <source media="(min-width: 64em)" srcset="images/washington-dc/washington-dc-temple-exterior-950.jpg">
+                    <source media="(min-width: 37.5em)" srcset="images/washington-dc/washington-dc-temple-exterior-600.jpg">
+                    <img src="images/washington-dc/washington-dc-temple-exterior-350.jpg" alt="Washington DC Temple Exterior">
+                </picture>
+                <div class="text">Washington DC Temple</div>
+            </div>
+            <div class="slideshow fade">
+                <div class="numbertext">2 / 2</div>
+                <picture>
+                    <source media="(min-width: 64em)" srcset="images/washington-dc/washington-dc-temple-night-950.jpg">
+                    <source media="(min-width: 37.5em)" srcset="images/washington-dc/washington-dc-temple-night-600.jpg">
+                    <img src="images/washington-dc/washington-dc-temple-night-350.jpg" alt="Washington DC Temple at Night">
+                </picture>
+                <div class="text">Washington DC Temple at night</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+        </div>
+        <!--slideshow-->
+        <div class="slideshow-info">
+            <aside>
+                <p>The Washington DC temple, located at 9900 Stoneybrook Dr Kensington, MD 20895 is currently
+                    closed for renevations. The Visitors Center, located on temple grounds, remains open, and the 41st
+                    Annual Festival of lights
+                    is proceeding as usual. The Festival of lights is a community tradition, and includes: <br><br>
+                    <strong>&#9656; Temple grounds lit up with over 650,000 lights</strong> <br>
+                    <strong> &#9656; Nightly performances in an indoor theater</strong> <br>
+                    <strong>&#9656; Christmas trees decorated with international themes</strong> <br>
+                    <strong>&#9656; Life-sized outdoor nativity</strong> <br><br>
+                    <a href="https://dctemplelights.lds.org">Learn more about the Festival of Lights</a></p>
+
+            </aside>
+        </div>
+        <!--slideshowinfo-->
+        <footer>
+            <a href="https://www.lds.org/temples?lang=eng">Attributes</a> | <a href="contact.html">Contact Us</a> |
+            <span id="currentDate"></span>
+        </footer>
+    </div>
+    <!--container-->
+</body>
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/slideshow.js"></script>
+<script src="scripts/currentDate.js"></script>
+
+</html>
