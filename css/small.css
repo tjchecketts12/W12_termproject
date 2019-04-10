@@ -2,7 +2,7 @@ body {
     background-color: #DFD7D2;
     margin: .7rem .2rem;
     padding: .9rem;
-    font-family: 'Quicksand', 'sans-serif';
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .container {
@@ -18,7 +18,7 @@ nav {
     margin-left: 1%;
     background-color: rgb(102, 94, 79);
     box-shadow: 0px 3px 3px gray;
-    font-family: 'Caudex', 'serif';
+    font-family: 'Tienne', 'serif';
 }
 
 .thankyou {
@@ -38,7 +38,7 @@ footer {
 /*------------ Header ----------------*/
 
 header h1 {
-    font-family: 'Tangerine', cursive;
+    font-family: 'Bollkorn SC', serif;
     font-size: 3rem;
     font-weight: bold;
     grid-column-start: 2;
