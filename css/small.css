@@ -98,8 +98,8 @@ header h1 a {
 }
 
 .site-navigation li a:hover {
-    background-color: rgba(0, 0, 0, .1);
-    color: black;;
+    background-color: #D1FAFF;
+    color: #1A0068;
 }
 
 .site-navigation li a:visited {
@@ -119,8 +119,7 @@ header h1 a {
 }
 
 .primaryNav li {
-    background-color: rgb(102, 94, 79);
-
+    background-color: #1A0068;
     display: grid;
     grid-template-columns: repeat(3, 2fr);
     max-width: 90%;
