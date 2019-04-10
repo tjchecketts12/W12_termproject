@@ -107,9 +107,9 @@ header h1 a {
 }
 
 .activepage {
-    background-color: #DFD7D2;
+    background-color: #D1FAFF;
     border-radius: 5px;
-    color: black;
+    color: #1A0068;
 }
 
 /*------------ Hamburger Menu -----------*/
