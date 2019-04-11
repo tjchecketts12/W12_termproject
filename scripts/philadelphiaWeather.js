@@ -1,4 +1,4 @@
-const weatherRequest3URL = 'https://api.openweathermap.org/data/2.5/weather?id=4560349&appid=2dc961d7969a3deedf5172330221b7f2&units=imperial';
+const weatherRequest3URL = 'https://api.openweathermap.org/data/2.5/weather?id=4560349&units=imperial&APPID=bb4509ecac6b78adefbfa471450e41df';
 let weatherRequest3 = new XMLHttpRequest();
 weatherRequest3.open('GET', weatherRequest3URL);
 weatherRequest3.responseType = 'json';

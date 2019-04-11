@@ -87,7 +87,7 @@ header h1 a {
     color: #1A0068;
 }
 
-.site-navigation li a:hover {
+.site-navigation li a:hover:not(.activepage) {
     background-color: #D1FAFF;
     color: #1A0068;
 }
