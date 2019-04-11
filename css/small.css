@@ -191,7 +191,7 @@ header h1 a {
 }
 
 .text {
-    color: white;
+    color: #ffffff;
     background-color: transparent;
     font-size: 15px;
     padding: 8px 12px;
@@ -375,7 +375,7 @@ form label.top input, form label.top select, form textarea {
 form input.submitBtn {
     border: none;
     background-color: #1A0068;
-    color: white;
+    color: #ffffff;
     border-radius: 4px;
     padding: .75rem;
     margin: 0 0 2rem 2%;
