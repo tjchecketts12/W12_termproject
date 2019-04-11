@@ -11,7 +11,7 @@ weatherRequest5.onload = function () {
     document.getElementById("rexburgCurrentTemp").innerHTML = currenttemp5;
     document.getElementById("rexburgMph").innerHTML = mph5;
     document.getElementById("rexburgHumidity").innerHTML = weatherData.main.humidity;
-    document.getElementById("rexburgCurrent").innerHTML = weatherData.weather[0].main;
+    document.getElementById("rexburgCurrently").innerHTML = weatherData.weather[0].main;
     
     //set variables to help formula run more smoothly
     let speed = Math.pow(mph5, 0.16);
