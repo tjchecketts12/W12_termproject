@@ -22,7 +22,7 @@ nav {
 }
 
 .thankyou {
-    border: 2px solid rgb(71, 67, 58);
+    border: 2px solid #1A0068;
     margin: 5%;
 }
 
@@ -514,7 +514,7 @@ a.toggle {
 /*------------ Contact Us ----------------*/
 .contact {
     margin: 2rem 0;
-    border: 1px double rgb(102, 94, 79);
+    border: 1px double #1A0068;
     border-radius: 10px;
     padding: .5rem 2%;
     font-family: 'Roboto Condensed', sans-serif;
