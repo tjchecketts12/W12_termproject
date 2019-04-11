@@ -38,7 +38,7 @@
 
                 <fieldset>
                     <legend>Contact Information</legend>
-                    <label class="top">Full Name*<input type="text" name="name" pattern="[A-Za-z]{5,}" required
+                    <label class="top">Full Name*<input type="text" name="name" pattern="[A-Za-z\ \-\]{5,}" title="letters, spaces, hyphens, or apostrophes only" required
                             autofocus></label>
                     <label class="top">Email*<input type="email" name="email" required placeholder="someone@email.com"></label>
                     <label class="top">Phone<span id="hint">555-555-5555</span><input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
