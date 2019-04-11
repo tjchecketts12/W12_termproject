@@ -1,63 +1,52 @@
 {
     "temples": [
         {
-            "templename": "Manhattan",
+            "templename": "Oakland",
             "closuredates": [
-                "Tuesday, December 25, 2018",
-                "Tuesday, January 1, 2019",
-                "Monday, January 21, 2019 - Monday, February 4, 2019",
-                "Saturday, April 6, 2019",
-                "Thursday, July 4, 2019",
-                "Tuesday, July 23, 2019 - Monday, October 28, 2019",
-                "Wednesday, November 27, 2019",
-                "Thursday, November 28, 2019",
-                "Tuesday, December 24, 2019",
-                "Wednesday, December 25, 2019",
-                "Tuesday, December 31, 2019"
+                "Temple closed during renovation",
+                "Thursday, 4 July 2019",
+                "Monday, 9 September 2019 - Monday, 23 September 2019",
+                "Saturday, 5 October 2019",
+                "Wednesday, 27 November 2019 (Limited Hours)",
+                "Thursday, 28 November 2019",
+                "Tuesday, 24 December 2019",
+                "Wednesday, 25 December 2019",
+                "Tuesday, 31 December 2019"
             ]
         },
         {
             "templename": "Boston",
             "closuredates": [
-                "Tuesday, December 25, 2018:",
-                "Tuesday, January 1, 2019:",
-                "Tuesday, January 8, 2019 - Monday, January 28, 2019:",
-                "Saturday, April 6, 2019:",
-                "Thursday, July 4, 2019:",
-                "Monday, July 8, 2019 - Monday, July 22, 2019:",
-                "Saturday, October 5, 2019:",
-                "Wednesday, November 27, 2019:",
-                "Thursday, November 28, 2019:",
-                "Tuesday, December 24, 2019:",
-                "Wednesday, December 25, 2019:",
-                "Tuesday, December 31, 2019:",
-                "Wednesday, January 1, 2020:"
-            ]
+                "Thursday, 4 July 2019",
+                "Monday, 8 July 2019 - Monday, 22 July 2019",
+                "Saturday, 5 October 2019",
+                "Wednesday, 27 November 2019",
+                "Thursday, 28 November 2019",
+                "Tuesday, 24 December 2019",
+                "Wednesday, 25 December 2019",
+                "Tuesday, 31 December 2019",
+                "Wednesday, 1 January 2020"
+                ]
         },
         {
-            "templename": "Hartford",
+            "templename": "Jordan River",
             "closuredates": [
-                "Tuesday, December 25, 2018",
-                "Tuesday, January 1, 2019",
-                "Saturday, April 6, 2019",
-                "Monday, May 13, 2019 - Monday, May 27, 2019",
-                "Thursday, July 4, 2019",
-                "Saturday, October 5, 2019",
-                "Monday, November 4, 2019 - Monday, November 18, 2019",
-                "Wednesday, November 27, 2019",
-                "Thursday, November 28, 2019",
-                "Tuesday, December 24, 2019",
-                "Wednesday, December 25, 2019",
-                "Tuesday, December 31, 2019"
+                "Monday, 3 June 2019 - Monday, 17 June 2019",
+                "Thursday, 4 July 2019",
+                "Wednesday, 24 July 2019",
+                "Saturday, 5 October 2019",
+                "Wednesday, 27 November 2019 (Limited Hours)",
+                "Thursday, 28 November 2019",
+                "Monday, 9 December 2019 - Monday, 23 December 2019",
+                "Tuesday, 24 December 2019",
+                "Wednesday, 25 December 2019",
+                "Tuesday, 31 December 2019 (Limited Hours)",
+                "Wednesday, 1 January 2020"
             ]
         },
         {
             "templename": "Philadelphia",
             "closuredates": [
-                "Tuesday, December 25, 2018",
-                "Tuesday, January 1, 2019",
-                "Monday, March 18, 2019 - Monday, April 1, 2019",
-                "Saturday, April 6, 2019",
                 "Thursday, July 4, 2019",
                 "Monday, September 16, 2019 - Monday, September 30, 2019",
                 "Saturday, October 5, 2019",
@@ -67,15 +56,13 @@
             ]
         },
         {
-            "templename": "Raleigh",
+            "templename": "San Diego",
             "closuredates": [
-                "CLOSED FOR RENEVATION"
-            ]
-        },
-        {
-            "templename": "Washington DC",
-            "closuredates": [
-                "CLOSED FOR RENEVATION"
+                "Thursday, 4 July 2019",
+                "Monday, 30 September 2019 - Monday, 11 November 2019",
+                "Wednesday, 27 November 2019 - Thursday, 28 November 2019",
+                "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
+                "Tuesday, 31 December 2019"
             ]
         },
         {

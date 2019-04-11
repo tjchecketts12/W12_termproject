@@ -47,6 +47,16 @@
                 <fieldset>
                     <legend>Room Information</legend>
                     <label class="top">Date of Reservation<input type="date" name="resdate"></label>
+                    <label class="top">Select Location<input list="location" name="location">
+                        <datalist id="location">
+                            <option selected disabled>Select Location</option>
+                            <option value="Boston, Massachusetts"></option>
+                            <option value="Oakland, California"></option>
+                            <option value="Philadelphia, Pennsylvania"></option>
+                            <option value="Rexburg, Idaho"></option>
+                            <option value="San Diego, California"></option>
+                            <option value="South Jordan, Utah"></option>
+                        </datalist></label>
                     <label class="top">Desired Bed Type<input list="roomtype" name="roomtype">
                         <datalist id="roomtype">
                             <option selected disabled>Select Type of Bed</option>

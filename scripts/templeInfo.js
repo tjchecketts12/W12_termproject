@@ -18,18 +18,18 @@ templeInfoRequest.onload = function () {
                     document.getElementById("bostonClosed").innerHTML += "&#9656;" + str + "<br>";
                 }
                 break;
-            case "Hartford":
+            case "Oakland":
                 for (let i = 0; i < temple.closuredates.length; i++) {
                     d = temple.closuredates[i];
                     str = d.split(":");
-                    document.getElementById("hartfordClosed").innerHTML += "&#9656;" + str + "<br>";
+                    document.getElementById("oaklandClosed").innerHTML += "&#9656;" + str + "<br>";
                 }
                 break;
-            case "Manhattan":
+            case "Jordan River":
                 for (let i = 0; i < temple.closuredates.length; i++) {
                     d = temple.closuredates[i];
                     str = d.split(":");
-                    document.getElementById("manhattanClosed").innerHTML += "&#9656;" + str + "<br>";
+                    document.getElementById("jordanriverClosed").innerHTML += "&#9656;" + str + "<br>";
                 }
                 break;
             case "Philadelphia":
@@ -39,11 +39,11 @@ templeInfoRequest.onload = function () {
                     document.getElementById("philadelphiaClosed").innerHTML += "&#9656;" + str + "<br>";
                 }
                 break;
-            case "Raleigh":
+            case "San Diego":
                 for (let i = 0; i < temple.closuredates.length; i++) {
                     d = temple.closuredates[i];
                     str = d.split(":");
-                    document.getElementById("raleighClosed").innerHTML += "&#9656;" + str + "<br>";
+                    document.getElementById("sandiegoClosed").innerHTML += "&#9656;" + str + "<br>";
                 }
                 break;
             case "Rexburg":
