@@ -17,7 +17,7 @@ body {
 nav {
     margin-left: 1%;
     background-color: #1A0068;
-    box-shadow: 0px 3px 3px gray;
+    box-shadow: 0px 3px 3px #ffffff;
     font-family: 'Average', serif;
 }
 
@@ -353,13 +353,13 @@ form {
 
 form fieldset {
     margin: 1rem;
-    border: 1px solid rgb(102, 94, 79);
+    border: 1px solid #1A0068;
     border-radius: 10px;
     padding: .5rem 2%;
 }
 
 form legend {
-    color: rgb(102, 94, 79);
+    color: #1A0068;
     margin: 0 1rem;
     padding: 0 .5rem;
     font-size: 1.5rem;
@@ -369,7 +369,7 @@ form label.top, form div {
     display: block;
     padding-top: 1rem;
     padding-bottom: .1rem;
-    color: rgb(102, 94, 79);
+    color: #1A0068;
     font-size: 1rem;
     font-weight: bold;
 }
@@ -378,18 +378,18 @@ form label.top input, form label.top select, form textarea {
     -webkit-appearance: none;
     display: block;
     font-size: 1rem;
-    border: solid 1px #999;
+    border: solid 1px #1A0068;
     border-radius: 4px;
     padding: .75rem;
-    color: rgb(71, 67, 58);
+    color:#1A0068;
     width: 90%;
     max-width: 20rem;
-    background-color: rgba(102, 94, 79, 0.2);
+    background-color: #ffffff;
 }
 
 form input.submitBtn {
     border: none;
-    background-color: rgb(102, 94, 79);
+    background-color: #1A0068;
     color: white;
     border-radius: 4px;
     padding: .75rem;
@@ -401,11 +401,11 @@ form input.submitBtn {
 }
 
 form label.top input:required {
-    background-color: rgba(178, 35, 35, 0.1);
+    background-color: #ffffff;
 }
 
 form label.top input:required:valid {
-    background-color: rgba(102, 94, 79, 0.2);
+    background-color: #ffffff;
 }
 
 #hint {
@@ -417,7 +417,7 @@ form h2 {
     font-size: 1.7rem;
     font-weight: normal;
     text-align: center;
-    color: rgb(71, 67, 58);
+    color: #1A0068;
 }
 
 /*-------------- Main -----------*/
