@@ -514,6 +514,7 @@ a.toggle {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-flow: column;
+    font-size: 1.5rem;
 }
 
 .contact p {
