@@ -221,7 +221,7 @@ header h1 a {
 .numbertext {
     color: white;
     font-size: 10px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: #D1FAFF;
     padding: 8px 12px;
     position: absolute;
     top: 0;
@@ -232,14 +232,14 @@ header h1 a {
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #bbb;
+    background-color: #1A0068;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-    background-color: #717171;
+    background-color: #D1FAFF;
 }
 
 .dot-container {
@@ -296,7 +296,7 @@ aside {
     font-family: 'Average', serif;
     font-weight: bold;
     font-size: 1rem;
-    color: rgb(102, 94, 79);
+    color: #1A0068;
     text-align: center;
 }
 
