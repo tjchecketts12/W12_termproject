@@ -219,9 +219,9 @@ header h1 a {
 }
 
 .numbertext {
-    color: white;
+    color: #1A0068;
     font-size: 10px;
-    background-color: #D1FAFF;
+    background-color: #ffffff;
     padding: 8px 12px;
     position: absolute;
     top: 0;
@@ -239,7 +239,7 @@ header h1 a {
 }
 
 .active, .dot:hover {
-    background-color: #D1FAFF;
+    background-color: #ffffff;
 }
 
 .dot-container {
