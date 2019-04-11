@@ -507,8 +507,8 @@ p {
 a.toggle {
     width: 100%;
     display: block;
-    background: rgb(71, 67, 58);
-    color: #fefefe;
+    background: #1A0068;
+    color: #ffffff;
     padding: .75em;
     border-radius: 0.15em;
     transition: background .3s ease;
