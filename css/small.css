@@ -102,10 +102,6 @@ header h1 a {
     color: #1A0068;
 }
 
-.site-navigation li a:visited {
-    color: white;
-}
-
 .activepage {
     background-color: #D1FAFF;
     border-radius: 5px;
