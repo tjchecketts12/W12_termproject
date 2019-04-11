@@ -516,6 +516,7 @@ a.toggle {
 
 .accordion li a:hover {
     background: #D1FAFF;
+    color: #1A0068;
 }
 
 /*------------ Contact Us ----------------*/
