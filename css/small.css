@@ -92,7 +92,7 @@ header h1 a {
     color: #1A0068;
 }
 
-.activepage {
+nav a.activepage {
     background-color: #D1FAFF;
     border-radius: 5px;
     color: #1A0068;
