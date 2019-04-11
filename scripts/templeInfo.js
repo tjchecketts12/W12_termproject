@@ -46,7 +46,7 @@ templeInfoRequest.onload = function () {
                     document.getElementById("raleighClosed").innerHTML += "&#9656;" + str + "<br>";
                 }
                 break;
-            case "Columbia":
+            case "Rexburg":
                 for (let i = 0; i < temple.closuredates.length; i++) {
                     d = temple.closuredates[i];
                     str = d.split(":");
