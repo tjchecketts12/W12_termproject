@@ -18,7 +18,7 @@ nav {
     margin-left: 1%;
     background-color: #1A0068;
     box-shadow: 0px 3px 3px gray;
-    font-family: 'Tienne', 'serif';
+    font-family: 'Average', serif;
 }
 
 .thankyou {
@@ -64,7 +64,7 @@ header h1 a {
     margin: .2rem 2%;
     background-color: #D1FAFF;
     border: none;
-    font-family: 'Tienne', serif;
+    font-family: 'Average', serif;
     font-size: 1.2rem;
     color: #1A0068;
 }
@@ -293,7 +293,7 @@ aside {
 }
 
 .hero h2 {
-    font-family: 'Tienne', serif;
+    font-family: 'Average', serif;
     font-weight: bold;
     font-size: 1rem;
     color: rgb(102, 94, 79);
@@ -345,7 +345,7 @@ form {
     display: flex;
     flex-flow: column;
     flex-wrap: wrap;
-    font-family: 'Tienne', serif;
+    font-family: 'Average', serif;
     margin-left: 5%;
     margin-right: 5%;
     
@@ -437,7 +437,7 @@ p {
 /*------------ Services ----------------*/
 
 .services-container h2 {
-    font-family: 'Tienne', serif;
+    font-family: 'Average', serif;
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
@@ -456,7 +456,7 @@ p {
 /*------------ Amenities ----------------*/
 
 .amenities-container h2 {
-    font-family: 'Tienne', serif;
+    font-family: 'Average', serif;
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
