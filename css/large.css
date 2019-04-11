@@ -190,6 +190,7 @@
         font-family: 'Quicksand', 'sans-serif';
         display: grid;
         grid-column-start: 1;
+        font-size: 1.5rem;
     }
     .contact p {
         margin-top: 10%;
