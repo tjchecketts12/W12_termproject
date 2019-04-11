@@ -449,7 +449,7 @@ p {
 
 .service-description {
     font-size: .9rem;
-    border-bottom: 2px solid rgb(71, 67, 58);
+    border-bottom: 2px solid #1A0068;
     padding-bottom: .7rem;
 }
 
@@ -468,7 +468,7 @@ p {
 
 .amenities-description {
     font-size: .9rem;
-    border-bottom: 2px solid rgb(71, 67, 58);
+    border-bottom: 2px solid #1A0068;
     padding-bottom: .7rem;
 }
 
