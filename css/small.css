@@ -59,7 +59,7 @@ header h1 a {
 }
 /*------------ Navigation ----------------*/
 
-.site-navigation {
+.navigation {
     width: 100%;
     margin-bottom: 2%;
     margin-top: 2%;
@@ -68,7 +68,7 @@ header h1 a {
     margin-right: 5%;
 }
 
-.site-navigation li {
+.navigation li {
     display: none;
     padding: .5em;
     font-weight: bold;
@@ -77,21 +77,21 @@ header h1 a {
     font-size: 1rem;
 }
 
-.site-navigation li:first-child {
+.navigation li:first-child {
     display: grid;
 }
 
-.site-navigation li a {
+.navigation li a {
     text-decoration: none;
     color: #1A0068;
 }
 
-.site-navigation li a:hover:not(.activepage) {
+nav li a:hover:not(.activepage) {
     background-color: #D1FAFF;
     color: #1A0068;
 }
 
-.activepage {
+nav a.active {
     background-color: #D1FAFF;
     border-radius: 5px;
     color: #1A0068;
