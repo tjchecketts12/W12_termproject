@@ -1,4 +1,4 @@
-const weatherRequest5URL = 'https://api.openweathermap.org/data/2.5/weather?id=4575352&units=imperial&APPID=bb4509ecac6b78adefbfa471450e41df';
+const weatherRequest5URL = 'https://api.openweathermap.org/data/2.5/weather?id=5605242&units=imperial&APPID=bb4509ecac6b78adefbfa471450e41df';
 let weatherRequest5 = new XMLHttpRequest();
 weatherRequest5.open('GET', weatherRequest5URL);
 weatherRequest5.responseType = 'json';
@@ -8,10 +8,10 @@ weatherRequest5.onload = function () {
     let weatherData = (weatherRequest5.response);
     currenttemp5 = parseFloat(Math.round(weatherData.main.temp));
     mph5 = parseFloat(weatherData.wind.speed);
-    document.getElementById("columbiaCurrentTemp").innerHTML = currenttemp5;
-    document.getElementById("columbiaMph").innerHTML = mph5;
-    document.getElementById("columbiaHumidity").innerHTML = weatherData.main.humidity;
-    document.getElementById("columbiaCurrently").innerHTML = weatherData.weather[0].main;
+    document.getElementById("rexburgCurrentTemp").innerHTML = currenttemp5;
+    document.getElementById("rexburgMph").innerHTML = mph5;
+    document.getElementById("rexburgHumidity").innerHTML = weatherData.main.humidity;
+    document.getElementById("rexburgCurrently").innerHTML = weatherData.weather[0].main;
     
     //set variables to help formula run more smoothly
     let speed = Math.pow(mph5, 0.16);
@@ -23,5 +23,5 @@ weatherRequest5.onload = function () {
     windchill = Math.round(windchill);
 
     //display windchill factor
-    document.getElementById("columbiaWindchill").innerHTML = windchill;
+    document.getElementById("rexburgWindchill").innerHTML = windchill;
 };
