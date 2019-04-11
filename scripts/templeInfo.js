@@ -50,7 +50,7 @@ templeInfoRequest.onload = function () {
                 for (let i = 0; i < temple.closuredates.length; i++) {
                     d = temple.closuredates[i];
                     str = d.split(":");
-                    document.getElementById("columbiaClosed").innerHTML += "&#9656;" + str + "<br>";
+                    document.getElementById("rexburgClosed").innerHTML += "&#9656;" + str + "<br>";
                 }
                 break;
             default:
