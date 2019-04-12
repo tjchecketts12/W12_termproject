@@ -187,7 +187,7 @@
         margin: 0;
         border: none;
         padding: .5rem 2%;
-        font-family: 'Quicksand', 'sans-serif';
+        font-family: 'Roboto Condensed', sans-serif;
         display: grid;
         grid-column-start: 1;
         font-size: 1.5rem;
