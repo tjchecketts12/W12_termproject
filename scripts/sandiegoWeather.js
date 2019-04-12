@@ -9,7 +9,7 @@ weatherRequest4.onload = function () {
     currenttemp4 = parseFloat(Math.round(weatherData.main.temp));
     mph4 = parseFloat(weatherData.wind.speed);
     document.getElementById("sandiegoCurrentTemp").innerHTML = currenttemp4;
-    document.getElementById("sandiegoMph").innerHTML = mph4;
+    document.getElementById("sandiegoMph").innerHTML= mph4;
     document.getElementById("sandiegoHumidity").innerHTML = weatherData.main.humidity;
     document.getElementById("sandiegoCurrently").innerHTML = weatherData.weather[0].main;
     
