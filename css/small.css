@@ -292,9 +292,6 @@ aside {
     margin: .5rem;
     padding: .5rem;
     text-align: center;
-    flex-flow: column;
-    max-width: 90%;
-    margin: 1em;
 }
 
 /*--------------- Hero ------------------*/
