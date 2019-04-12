@@ -1,4 +1,4 @@
-const weatherRequest4URL = 'https://api.openweathermap.org/data/2.5/weather?id=4487042&appid=2dc961d7969a3deedf5172330221b7f2&units=imperial';
+const weatherRequest4URL = 'https://api.openweathermap.org/data/2.5/weather?id=5391811&appid=2dc961d7969a3deedf5172330221b7f2&units=imperial';
 let weatherRequest4 = new XMLHttpRequest();
 weatherRequest4.open('GET', weatherRequest4URL);
 weatherRequest4.responseType = 'json';
@@ -8,10 +8,10 @@ weatherRequest4.onload = function () {
     let weatherData = (weatherRequest4.response);
     currenttemp4 = parseFloat(Math.round(weatherData.main.temp));
     mph4 = parseFloat(weatherData.wind.speed);
-    document.getElementById("raleighCurrentTemp").innerHTML = currenttemp4;
-    document.getElementById("raleighMph").innerHTML = mph4;
-    document.getElementById("raleighHumidity").innerHTML = weatherData.main.humidity;
-    document.getElementById("raleighCurrently").innerHTML = weatherData.weather[0].main;
+    document.getElementById("sandiegoCurrentTemp").innerHTML = currenttemp4;
+    document.getElementById("sandiegoMph").innerHTML = mph4;
+    document.getElementById("sandiegoHumidity").innerHTML = weatherData.main.humidity;
+    document.getElementById("sandiegoCurrently").innerHTML = weatherData.weather[0].main;
     
     //set variables to help formula run more smoothly
     let speed = Math.pow(mph4, 0.16);
@@ -23,5 +23,5 @@ weatherRequest4.onload = function () {
     windchill = Math.round(windchill);
 
     //display windchill factor
-    document.getElementById("raleighWindchill").innerHTML = windchill;
+    document.getElementById("sandiegoWindchill").innerHTML = windchill;
 };

@@ -1,4 +1,4 @@
-const weatherRequest2URL = 'https://api.openweathermap.org/data/2.5/weather?id=5125771&units=imperial&APPID=bb4509ecac6b78adefbfa471450e41df';
+const weatherRequest2URL = 'https://api.openweathermap.org/data/2.5/weather?id=5378538&units=imperial&APPID=bb4509ecac6b78adefbfa471450e41df';
 let weatherRequest2 = new XMLHttpRequest();
 weatherRequest2.open('GET', weatherRequest2URL);
 weatherRequest2.responseType = 'json';
@@ -8,10 +8,10 @@ weatherRequest2.onload = function () {
     let weatherData = (weatherRequest2.response);
     currenttemp2 = parseFloat(Math.round(weatherData.main.temp));
     mph2 = parseFloat(weatherData.wind.speed);
-    document.getElementById("manhattanCurrentTemp").innerHTML = currenttemp2;
-    document.getElementById("manhattanMph").innerHTML = mph2;
-    document.getElementById("manhattanHumidity").innerHTML = weatherData.main.humidity;
-    document.getElementById("manhattanCurrently").innerHTML = weatherData.weather[0].main;
+    document.getElementById("oaklandCurrentTemp").innerHTML = currenttemp2;
+    document.getElementById("oaklandMph").innerHTML = mph2;
+    document.getElementById("oaklandHumidity").innerHTML = weatherData.main.humidity;
+    document.getElementById("oaklandCurrently").innerHTML = weatherData.weather[0].main;
     
     //set variables to help formula run more smoothly
     let speed = Math.pow(mph2, 0.16);
@@ -23,5 +23,5 @@ weatherRequest2.onload = function () {
     windchill = Math.round(windchill);
 
     //display windchill factor
-    document.getElementById("manhattanWindchill").innerHTML = windchill;
+    document.getElementById("oaklandWindchill").innerHTML = windchill;
 };
