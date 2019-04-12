@@ -157,7 +157,7 @@ header h1 a {
 
 .slideshow-container {
     max-width: 100%;
-    position: relative;
+    position: center;
     margin: auto;
     margin-top: 3%;
 }
